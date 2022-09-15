@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    border-radius: 20px;
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+}
+.navbar {background-color:#be4414;
+    color:#be4414
+}
+.navbar-toggler-icon{
+    color: #be4414;
+}
+.nav-item {
+    font-family:fantasy;
+    font-size: 22px;
+    /* font-style: italic; */
+    font-style: oblique;
+    margin-left: 35px;
+
+    color: #be4414;
+    
+}
+.titulo {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    
+}
+.tituloCrip {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50%;
+}
+header {
+    padding: 12px 10%;
+    box-shadow: 0px 5px 4px 3px rgba(0, 0, 0, 0.3);
+    background-color:#be4414;
+}
+h1 {
+    color:#be4414;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+}
+#boton-carrito {
+    border: none;
+    color:white;
+    font-size: 20px;
+    background-color:#be4414;
+    border-radius: 20%;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+#boton-carrito:hover {
+    cursor: pointer;
+    color: white;
+    background-color: royalblue;
+    border-radius: 40px;
+}
+#boton-carrito:focus {
+    outline: none;
+}
+
+#contenedor-productos {
+    font-family:cursive;
+    text-align: center;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: bisque;
+    box-shadow: 0px 5px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    line-height: 1.8;
+}
+.producto {
+    background-color: rgb(230, 147, 47);
+    border-radius: 5px;
+    max-width: 20%;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.precioProducto {
+    font-weight: 900;
+}
+.boton-agregar {
+    background-color:#be4414;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boton-agregar:hover {
+    cursor: pointer;
+    
+}
+.boton-agregar:focus {
+    outline: none;
+    
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color:#be4414;
+    padding-bottom: 5px;
+}
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color:#be4414;
+    border: none;
+    background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+    
+}
+.tablaDeInversion{
+    background-color: bisque;
+}
+.productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.productoEnCarrito:hover {
+    border-left: 5px solid royalblue;
+}
+
+.boton-eliminar {
+    background-color: white;
+    color:black;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+.boton-eliminar:focus {
+    outline: none;
+}
+/* form para enviar mail */
+.field {
+    margin-bottom: 10px;
+  }
+  
+  .field label {
+    display: block;
+    font-size: 14px;
+    color:whitesmoke;
+  }
+  
+  .field input {
+    display: block;
+    min-width: 800px;
+    line-height: 2;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color:#be4414;
+    color: #fff;
+    border: none
+  }
+
+  hr {
+    color: #be4414;
+  }
+  .fab {
+   color: #be4414;
+
+  }
+
+  .limpiarForm {
+    border: none;
+    color: #ffffff;
+    margin: 15px;
+    background-color: grey;
+    border-radius: 3px;
+    font-size: 15px;
+
+}
+.limpiarForm2{
+    border:none;
+}
+.fondoCrypto{
+    background-color: bisque;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.fondoFormulario{ background-color: bisque;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+
+}
+
+.letraEncabezado{
+    font-family:fantasy;
+    font-size: 45px;
+
+}
+
+.filtroTalles{border:none;
+    border-radius: 5px;
+    background-color: bisque;
+    
+}
